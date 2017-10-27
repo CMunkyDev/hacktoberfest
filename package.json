@@ -9,7 +9,7 @@
   "scripts": {
     "test": "mocha",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js & live-server"
   },
   "keywords": [],
   "author": "",
