@@ -1,1 +1,18 @@
-const data = [{}]
+[
+  {
+  "id": "1",
+  "img": "https://vignette3.wikia.nocookie.net/epicrapbattlesofhistory/images/8/89/David_S._Pumpkins_avatar.png/revision/latest?cb=20161105130709"
+  },
+  {
+    "id": "2",
+    "img": "http://mystic-investigations.w4lizsrnr.netdna-cdn.com/halloween-blog/wp-content/uploads/2016/11/DavidPumpkins.gif"
+  },
+  {
+    "id": "3",
+    "img": "https://cdn.pastemagazine.com/www/articles/David%20S%20Pumpkins%20SNL%20by%20Will%20Heath%20NBC%20Header.jpg"
+  },
+  {
+    "id": "4",
+    "img": "https://images.britcdn.com/wp-content/uploads/2017/10/David-S-Pumpkins.jpg?fit=max&w=1440"
+  }
+]
