@@ -1,15 +1,19 @@
 const express = require('express')
-const app = express()
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
+const cors = require('cors')
+
+const app = express()
+app.use(cors())
 
 const port = process.env.PORT || 3000
 
 app.disable('x-powered-by')
-if(process.env.NODE_ENV === 'development') app.use(morgan('dev'))
+if (process.env.NODE_ENV === 'development') app.use(morgan('dev'))
 app.use(bodyParser.json())
 
-app.use('/davidspumpkins')
+const pumpkinRouter = require('./src/routes/pumpkins')
+app.use('/davidspumpkins', pumpkinRouter)
 
 app.use((err, req, res, next) => {
   const status = err.status || 500
