@@ -9,6 +9,7 @@ app.disable('x-powered-by')
 if(process.env.NODE_ENV === 'development') app.use(morgan('dev'))
 app.use(bodyParser.json())
 
+app.use('/davidspumpkins')
 
 app.use((err, req, res, next) => {
   const status = err.status || 500
